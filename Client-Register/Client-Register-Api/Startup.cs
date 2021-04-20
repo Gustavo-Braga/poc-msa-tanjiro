@@ -1,3 +1,4 @@
+using ClientRegister.CrossCutting.Ioc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,7 +21,6 @@ namespace Client_Register_Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -36,6 +36,9 @@ namespace Client_Register_Api
                 });
                 c.EnableAnnotations();
             });
+
+            Bootstrapper.Inject(services);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
