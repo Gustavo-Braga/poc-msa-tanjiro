@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{AF7E3F38-3818-4B9F-B4D5-CCD3E84F27CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{130E1706-DD46-4CB0-B56C-10CB64424AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3B1FDF70-FAB9-47CA-8755-5E0210069193}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{318D024A-8F36-46C1-A845-C7AFF621198C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client-Register-Api", "Client-Register-Api\Client-Register-Api.csproj", "{B88BA78C-77EA-4CB9-A63F-32F5660A9A99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B88BA78C-77EA-4CB9-A63F-32F5660A9A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88BA78C-77EA-4CB9-A63F-32F5660A9A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88BA78C-77EA-4CB9-A63F-32F5660A9A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88BA78C-77EA-4CB9-A63F-32F5660A9A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B88BA78C-77EA-4CB9-A63F-32F5660A9A99} = {3B1FDF70-FAB9-47CA-8755-5E0210069193}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E9E1966-EB0E-4FC9-8678-6B4D06BB7059}
+	EndGlobalSection
+EndGlobal
