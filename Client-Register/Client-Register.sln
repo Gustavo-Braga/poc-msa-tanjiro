@@ -13,11 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client-Register-Api", "Clie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{3175DC78-66D5-4371-9E50-14370D37D05D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegister.CrossCutting.Ioc", "ClientRegister.CrossCutting.Ioc\ClientRegister.CrossCutting.Ioc.csproj", "{5CB47F53-23F8-4D73-9D7E-1E997067C60B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegister.CrossCutting.Ioc", "ClientRegister.CrossCutting.Ioc\ClientRegister.CrossCutting.Ioc.csproj", "{5CB47F53-23F8-4D73-9D7E-1E997067C60B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegister.Domain.CommandHandler", "ClientRegister.Domain.CommandHandler\ClientRegister.Domain.CommandHandler.csproj", "{DD546D8C-E488-43B7-B4F6-770CC5A6EAD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegister.Domain.CommandHandler", "ClientRegister.Domain.CommandHandler\ClientRegister.Domain.CommandHandler.csproj", "{DD546D8C-E488-43B7-B4F6-770CC5A6EAD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegister.Domain", "ClientRegister.Domain\ClientRegister.Domain.csproj", "{B478FC3D-AAB5-4489-96D6-782708F2696F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegister.Domain", "ClientRegister.Domain\ClientRegister.Domain.csproj", "{B478FC3D-AAB5-4489-96D6-782708F2696F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegister.Infrastructure.Data", "ClientRegister.Infrastructure.Data\ClientRegister.Infrastructure.Data.csproj", "{F8625F3A-25FE-4DE3-A4FB-8CE78CF9AF52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegister.Infrastructure.Configuration", "ClientRegister.Infrastructure.Configuration\ClientRegister.Infrastructure.Configuration.csproj", "{78FAC1C1-0FD7-488C-905D-9BA6937300FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegister.CrossCutting.Configuration", "ClientRegister.CrossCutting.Configuration\ClientRegister.CrossCutting.Configuration.csproj", "{21E98E8F-73FB-4E74-8EA6-3168D42251E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{B478FC3D-AAB5-4489-96D6-782708F2696F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B478FC3D-AAB5-4489-96D6-782708F2696F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B478FC3D-AAB5-4489-96D6-782708F2696F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8625F3A-25FE-4DE3-A4FB-8CE78CF9AF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8625F3A-25FE-4DE3-A4FB-8CE78CF9AF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8625F3A-25FE-4DE3-A4FB-8CE78CF9AF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8625F3A-25FE-4DE3-A4FB-8CE78CF9AF52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78FAC1C1-0FD7-488C-905D-9BA6937300FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78FAC1C1-0FD7-488C-905D-9BA6937300FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78FAC1C1-0FD7-488C-905D-9BA6937300FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78FAC1C1-0FD7-488C-905D-9BA6937300FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E98E8F-73FB-4E74-8EA6-3168D42251E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E98E8F-73FB-4E74-8EA6-3168D42251E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E98E8F-73FB-4E74-8EA6-3168D42251E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E98E8F-73FB-4E74-8EA6-3168D42251E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +68,9 @@ Global
 		{5CB47F53-23F8-4D73-9D7E-1E997067C60B} = {3175DC78-66D5-4371-9E50-14370D37D05D}
 		{DD546D8C-E488-43B7-B4F6-770CC5A6EAD1} = {AF7E3F38-3818-4B9F-B4D5-CCD3E84F27CA}
 		{B478FC3D-AAB5-4489-96D6-782708F2696F} = {AF7E3F38-3818-4B9F-B4D5-CCD3E84F27CA}
+		{F8625F3A-25FE-4DE3-A4FB-8CE78CF9AF52} = {130E1706-DD46-4CB0-B56C-10CB64424AC3}
+		{78FAC1C1-0FD7-488C-905D-9BA6937300FA} = {130E1706-DD46-4CB0-B56C-10CB64424AC3}
+		{21E98E8F-73FB-4E74-8EA6-3168D42251E3} = {3175DC78-66D5-4371-9E50-14370D37D05D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E9E1966-EB0E-4FC9-8678-6B4D06BB7059}

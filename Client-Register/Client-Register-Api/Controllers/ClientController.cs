@@ -10,6 +10,8 @@ namespace Client_Register_Api.Controllers
         public ClientController()
         {
         }
+
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
