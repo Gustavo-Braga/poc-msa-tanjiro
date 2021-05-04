@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using ClientRegister.Domain.Model;
-using ClientRegister.Infrastructure.Data.Document;
+using ClientRegister.Driven.Adapters.Document;
 
-namespace ClientRegister.Infrastructure.Data.Mapper
+namespace ClientRegister.Driven.Port.Mapper
 {
     public class AutoMapping: Profile
     {

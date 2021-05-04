@@ -1,21 +1,18 @@
-﻿using AutoMapper;
-using ClientRegister.Domain.Interfaces;
-using ClientRegister.Domain.Model;
-using ClientRegister.Infrastructure.Data.Document;
-using ClientRegister.Infrastructure.Data.Interfaces;
+﻿using ClientRegister.Driven.Adapters.Document;
+using ClientRegister.Driven.Adapters.Interfaces;
 using MongoDB.Driver;
 using System;
 using System.Threading.Tasks;
 
-namespace ClientRegister.Infrastructure.Data.Repository
+namespace ClientRegister.Driven.Adapters.Repository
 {
-    public class ClientRepository: IClientRepository
+    public class ClientRepositoryAdapter : IClientRepositoryAdapter
     {
         private readonly string _databaseName = "tanjiroDB";
         private readonly string _collectionName = "clients";
         private readonly IMongoCollection<ClientDocument> _collection;
 
-        public ClientRepository(string connectionString)
+        public ClientRepositoryAdapter(string connectionString)
         {
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase(_databaseName);

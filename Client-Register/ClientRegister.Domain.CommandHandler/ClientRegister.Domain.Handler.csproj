@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mapper\" />
+    <ProjectReference Include="..\ClientRegister.Domain\ClientRegister.Domain.csproj" />
   </ItemGroup>
 
 </Project>

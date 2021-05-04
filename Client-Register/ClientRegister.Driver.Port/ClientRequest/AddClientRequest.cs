@@ -1,4 +1,4 @@
-﻿namespace ClientRegister.Domain.CommandHandler.Client
+﻿namespace ClientRegister.Driver.Port.ClientRequest
 {
     public class AddClientRequest
     {

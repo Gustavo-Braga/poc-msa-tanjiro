@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using System;
 
-namespace ClientRegister.Infrastructure.Data.Document
+namespace ClientRegister.Driven.Adapters.Document
 {
     public class ClientDocument
     {
