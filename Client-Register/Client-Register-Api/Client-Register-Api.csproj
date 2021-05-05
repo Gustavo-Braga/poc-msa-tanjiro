@@ -23,5 +23,11 @@
     <ProjectReference Include="..\ClientRegister.CrossCutting.Ioc\ClientRegister.CrossCutting.Ioc.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 
 </Project>

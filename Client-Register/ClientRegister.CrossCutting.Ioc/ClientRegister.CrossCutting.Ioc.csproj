@@ -7,8 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
     
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClientRegister.CrossCutting.Configuration\ClientRegister.CrossCutting.Configuration.csproj" />
+    <ProjectReference Include="..\ClientRegister.Driven.Port\ClientRegister.Driven.Port.csproj" />
+    <ProjectReference Include="..\ClientRegister.Driver.Port\ClientRegister.Driver.Port.csproj" />
   </ItemGroup>
 
 </Project>

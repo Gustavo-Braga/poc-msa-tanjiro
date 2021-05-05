@@ -18,6 +18,7 @@ namespace ClientRegister.Driven.Adapters.Repository
             var database = client.GetDatabase(_databaseName);
             _collection = database.GetCollection<ClientDocument>(_collectionName);
         }
+
         public virtual async Task<Guid> InsertOneAsync(ClientDocument document)
         {
             await _collection.InsertOneAsync(document);
